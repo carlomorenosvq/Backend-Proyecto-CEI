@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Inicio</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon3.png" />
+  </head>
+  <body>
+    <!-- CABECERA-->
+    <header class="header">
+      <div class="mobileHeader">
+        <!-- boton para desplegar menu-->
+        <button onclick="{openMenu()}" class="hamburger">
+          <div class="palitos">☰</div>
+        </button>
+      </div>
+
+      <!-- Elementos de la cabecera-->
+      <nav class="cabecera">
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                
+                
+                
+                <form action="/logout" method="POST">
+                 <button type="submit">Logout</button></a></li>
+                </form>
+                
+    
+        </ul>
+      </nav>
+    </header>
+
+    <body>
+      
+      <div class="profile">
+        <h1>Mi perfil</h1>
+        <br>
+        <div class="profile__picture"></div>
+
+        <h1>Index</h1>
+        
+        
+        
+        
+        <div class="profile__wedding">
+          <h2>Información de la boda</h2>
+          <p>Fecha: 15 de julio de 2022</p>
+          <p>Lugar: Finca Los Olivos</p>
+          <p>Número de invitados: 100</p>
+        </div>
+      </div>
+      <div class="cart">
+                
+        <a><button onclick="window.location.href='/carrito'">Ver carrito</button></a>
+                
+              </div>
+           
+        
+      
+      <div class="container">
+        <div class="box">
+          <h2>PACK 1</h2>
+          <p>Equipo PA autoamplificada</p>
+          <p>Trípode de luces</p>
+          <p>Cabina de DJ</p>
+          <input type="hidden" name="pack_id" value="1">
+          <button class="add-to-cart" id="1">Añadir al carrito</button>      
+          <div class="foto">
+            <img src="images/pack1.jpg" alt="Foto 1">
+
+          </div>
+        </div>
+        <div class="box">
+          <h2>PACK 2</h2>
+          <p>Equipo PA autoamplificada</p>
+          <p>Tótem de iluminación</p>
+          <p>Cabina de DJ</p>
+          <input type="hidden" name="pack_id" value="1">
+          <button class="add-to-cart" id="2">Añadir al carrito</button>      
+          <div class="foto">
+            <img src="images/pack2.jpeg" width="50%"alt="Foto 1">
+
+          </div>
+        </div>
+        <div class="box">
+          <h2>PACK 3</h2>
+          <p>Equipo PA autoamplificada y subgraves</p>
+          <p>Truss de iluminación</p>
+          <p>Cabina de DJ profesional</p>
+          <input type="hidden" name="pack_id" value="1">
+          <button class="add-to-cart" id="3">Añadir al carrito</button>      
+          <div class="foto">
+            <img src="images/pack3.jpeg" width="50%" alt="Foto 1">
+
+          </div>
+        </div>
+      </div>
+    
+
+
+      
+
+
+
+
+    </body>
+
+
+
+
+
+    
+
+    </div>
+
+
+    
+    <script>
+
+
+
+
+
+
+
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+const cartCount = document.querySelector('.cart-count');
+
+addToCartButtons.forEach(button => {
+  
+    const elegido =
+    button.addEventListener('click', () => {
+    const packId = button.id; // obtiene el identificador del botón
+    alert(`Se ha añadido el pack numero ${packId}`); // utiliza el identificador en el mensaje
+  
+    
+  });
+});
+
+
+      
+    </script>
+    <script>
+      fetch('index')
+        .then(response => response.json())
+        .then(data => {
+          const itemsDiv = document.getElementById('items');
+          data.forEach(item => {
+            const itemDiv = document.createElement('div');
+            const name = document.createElement('h2');
+            name.innerText = item.name;
+            const price = document.createElement('p');
+            price.innerText = `Price: ${item.price}`;
+            const addButton = document.createElement('button');
+            addButton.innerText = 'Add to cart';
+            addButton.addEventListener('click', () => {
+              // Añadir item al carrito
+            });
+            itemDiv.appendChild(name);
+            itemDiv.appendChild(price);
+            itemDiv.appendChild(addButton);
+            itemsDiv.appendChild(itemDiv);
+          });
+        })
+        .catch(error => {
+          console.error('Error fetching items:', error);
+        });
+    </script>
+    <script src="../public/js/profile.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>

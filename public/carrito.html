@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <link rel="stylesheet" href="css/carrito.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Inicio</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon3.png" />
+  </head>
+  <body>
+    <!-- CABECERA-->
+    <header class="header">
+      <div class="mobileHeader">
+        <!-- boton para desplegar menu-->
+        <button onclick="{openMenu()}" class="hamburger">
+          <div class="palitos">☰</div>
+        </button>
+      </div>
+
+      <!-- Elementos de la cabecera-->
+      <nav class="cabecera">
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                
+                
+                
+                <form action="/logout" method="POST">
+                 <button type="submit">Logout</button></a></li>
+                </form>
+                
+    
+        </ul>
+      </nav>
+    </header>
+
+    <body>
+      
+      <div class="container">
+        <a href="/create"></a>
+      </div>
+
+
+      
+
+
+
+
+    </body>
+
+
+
+
+
+    
+
+    </div>
+
+
+    
+    <script>
+
+
+
+
+
+
+
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+const cartCount = document.querySelector('.cart-count');
+
+addToCartButtons.forEach(button => {
+  
+    const elegido =
+    button.addEventListener('click', () => {
+    const packId = button.id; // obtiene el identificador del botón
+    alert(`Se ha añadido el pack numero ${packId}`); // utiliza el identificador en el mensaje
+  
+    
+  });
+});
+
+
+      
+   
+     
+    </script>
+    <script src="../public/js/profile.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>

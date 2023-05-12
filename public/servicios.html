@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <link rel="stylesheet" href="./css/servicios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
+    <title>Servicios</title>
+    <link rel="shortcut icon"  type="image/jpg" href="images/favicon3.png"/>
+</head>
+<body>
+
+
+    <!-- CABECERA -->
+
+    <!-- Botón hamburger para que se vea en dispositivos más pequeños -->
+    <header class="header">
+        <div class="mobileHeader">
+            
+            <!-- Botón hamburger para que se vea en dispositivos más pequeños -->
+            <button onclick={openMenu()} class="hamburger">
+                <div class="palitos">
+                    ☰
+                </div>
+            </button>
+          </div>
+         <!-- Cabecera con enlaces a las páginas -->
+        <nav class="cabecera">
+            <ul>
+            
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="login.html">Login</a></li>
+          
+                
+                
+                
+           </ul>
+
+        
+
+         </nav>
+        </header>
+    
+     <!-- Contenedor: tiene un titulo y el logo-->
+    <div class="container">
+        <h1>
+            <span>Disfruta tu momento</span>
+        </h1>
+       
+        
+            <img class="logo" src="images/logo.png">
+        
+        
+        
+    </div>
+
+    <div class="flecha">
+        
+        <a href="#presentacion" class="arrow down">Down</a>
+    </div>
+
+    <!-- Contenedor principal de la página-->
+    <div class="contenedor">
+            <div id="presentacion">
+                <p>Los servicios de PimPam Music siempre se ofrecen de forma personalizada, teniendo en cuenta todas las necesidades y preferencias de cada pareja. Contad con nosotros y disfrutaréis de un amplio repertorio musical y de algunos servicios como:</p>
+            </div>
+                 <!-- Imagen-->
+                <img id="wave-shape" src="images/montaje3.jpeg" alt="montaje boda">
+
+            <div class="servicios">
+                <ul>
+                    <li>Música para la ceremonia</li>
+                    <li>Sonorización de ceremoria</li>
+                    <li>Música para el aperitivo</li>
+                    <li>Música para el banquete</li>
+                    <li>Equipo de sonido completo</li>
+                    <li>Animación infantil</li>
+                    <li>Maquillaje fluorescente</li>
+                    <li>Sonorización de grupos</li>
+                    <li>Fotomatón</li>
+                </ul>
+            </div>
+
+            <h2>
+                <span>¡Y mucho más!</span>
+            </h2>
+
+             <!--Flecha para bajar a la siguiente seccion-->
+            <div class="flecha2">
+                
+                <a href="#lider" class="arrow2 down2">Down</a>
+            </div>
+    </div>
+
+    
+
+    
+
+ <!-- FOOTER-->
+    <footer class="footer-distributed">
+        
+         <!--Footer izquierdo-->
+        <div class="footer-left">
+             <!-- Logo-->
+            <img class="logo3" src="images/logo.png" alt="logo pimpammusic">
+             <!-- Enlaces para las demás paginas-->
+            <p class="footer-links">
+                
+                
+                <a href="inicio.html">Inicio</a>
+
+                <a href="servicios.html">Servicios</a>
+            
+                <a href="galeria.html">Galería</a>
+                
+                <a href="contact.html">Contacto</a>
+                
+                <a href="about.html">Sobre Nosotros</a>
+            
+                <a href="login.html">Login</a>
+
+            </p>
+
+            <p class="footer-company-name">PimPam Music © 2005</p>
+        </div>
+
+         <!-- Footer central-->
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Sevilla</span></p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+34 666 16 56 60</p>
+                
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">pimpammusic@gmail.com</a></p>
+            </div>
+
+        </div>
+         <!-- Footer derecho-->
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                Comprometidos con el buen trabajo
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.instagram.com/ppmsur/"><i class="logo4"><img src="./images/footer/instagram.png" alt=""></i></a>
+                <a href="https://www.facebook.com/pimpammusic"><i class="logo4"><img src="./images/footer/facebook.png" alt=""></i></a>
+                
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+ <!-- Scripts para enlazar-->    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="javascript/servicios.js"></script>
+</body>
+</html>

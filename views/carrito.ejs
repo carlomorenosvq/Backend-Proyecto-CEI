@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <link rel="stylesheet" href="./css/carrito.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Inicio</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon3.png" />
+  </head>
+  <body>
+    <!-- CABECERA-->
+    <header class="header">
+      <div class="mobileHeader">
+        <!-- boton para desplegar menu-->
+        <button onclick="{openMenu()}" class="hamburger">
+          <div class="palitos">☰</div>
+        </button>
+      </div>
+
+      <!-- Elementos de la cabecera-->
+      <nav class="cabecera">
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                
+                
+                
+                <form action="/logout" method="POST">
+                 <button type="submit">Logout</button></a></li>
+                </form>
+                
+    
+        </ul>
+      </nav>
+    </header>
+
+    <body>
+      
+     
+
+
+
+      <div class="columnas-container">
+        <div class="columna-izquierda">
+           <div class="profile">
+        <h1>Mi perfil</h1>
+        <br>
+        <div class="profile__picture"></div>
+
+       
+        
+        
+        <div class="profile__name">Juan Pérez</div>
+        
+        <div class="profile__wedding">
+          <h2>Información de la boda</h2>
+          <p>Fecha: 15 de julio de 2022</p>
+          <p>Lugar: Finca Los Olivos</p>
+          <p>Número de invitados: 100</p>
+        </div>
+        
+      </div>
+
+        </div>
+        <div class="columna-derecha">
+            <div class="carrito">
+                
+                    
+                    <!-- <table>
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Acciones</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td class="botones">
+                                <button onclick="insertar">Insertar</button>
+                                <button onclick="editar">Editar</button>
+                                <button onclick="eliminar">Eliminar</button>
+                              </td>
+                            </tr>
+                          
+                        </tbody>
+                      </table> -->
+
+                    <form action= "/music" class="login"  id="form" method="POST">
+                        <h1 class="spotify">Barra libre boda</h5>
+                          <div class="login__field">
+                            <i class="login__icon fas fa-lock"></i>
+                            <label for="name" class="form-label" id="spotify" name="spotify">Enlace Spotify</label>
+                              <input type="name" class="form-control" id="spotify" name="name">
+                          </div>
+                          <div class="login__field">
+                            <i class="login__icon fas fa-lock"></i>
+                            <label for="name" class="form-label">Horas de barra libre</label>
+                              <input type="name" class="form-control" id="hours" name="name">
+                          </div>
+                       
+                        
+                        <div class="login__field">
+                          <i class="login__icon fas fa-lock"></i>
+                          <label for="rol" class="form-label">Pack Elegido</label>
+                          <input type="radio" id="pack" name="rol" value="admin" name="rol">
+                          <label for="admin">1</label>
+                          
+                          <input type="radio" id="pack" name="rol" value="cliente" name="rol">
+                          <label for="cliente">2</label>
+
+                          <input type="radio" id="pack" name="rol" value="cliente">
+                          <label for="cliente">3</label>
+                        </div>
+                        <button type="submit" class="button login__submit">
+                          <span class="button__text">Enviar</span>
+                          <i class="button__icon fas fa-chevron-right"></i>
+                      </button>	
+                    </form>
+                    
+                    
+                    
+                </div>
+          
+        </div>
+      </div>
+      
+      
+      
+           
+        
+     
+      
+
+
+      
+
+
+
+
+    </body>
+
+
+
+
+
+    
+
+    </div>
+
+
+    
+    <script>
+
+
+      
+    </script>
+    <script src="js/music.js"></script>
+    <script src="music.js"></script>
+    <script src="../public/js/profile.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
